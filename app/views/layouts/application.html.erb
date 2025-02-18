@@ -18,7 +18,7 @@
       </div>
       <% if user_signed_in? %>
         <li>
-          <%= link_to root_path do %>
+          <%= link_to user_path(current_user) do %>
             <i class="fa-solid fa-house">Home</i>
           <% end %>
         </li>
